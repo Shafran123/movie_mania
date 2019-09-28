@@ -7,8 +7,8 @@ import axios from 'axios'
 
 class App extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       movies: [],
 
@@ -24,12 +24,30 @@ class App extends Component {
       console.log(data.movies);
       this.setState({
         movies: data.movies
+        
       })
+      this.sortMovies();
     }).catch(err => {
       // Do something for an error here
       console.log("Error Reading data " + err);
     });
+    
   }
+
+sortMovies(){
+  const {movies} = this.state
+  
+  let movies1 = movies.sort((a,b)=> {
+    var a1 = a.title.toLowerCase();
+    var b1 = b.title.toLowerCase();
+    return a1<b1 ?-1:a1> b1? 1 :0;
+    })
+    console.log(movies1);
+
+    this.setState({
+      movies : movies1
+    })
+}
 
   render() {
     return (
@@ -56,13 +74,11 @@ class App extends Component {
 
         </MDBRow>
         {/* Card */}
-
-
         <MDBRow>
-
           <div>
             {
               this.state.movies.map((value) =>
+        
                 <div className="fetch">
 
                   <span>
@@ -73,22 +89,17 @@ class App extends Component {
                         <MDBCardImage className="img-fluid" src="https://i.imgur.com/D0jm0sc.jpg" />
                         <MDBCardBody>
                           <MDBIcon icon='film' /> Movie
-    <MDBCardTitle className='font-weight-bold'><strong>{value.title}</strong> <MDBBadge color="primary" pill>1997</MDBBadge></MDBCardTitle>
+                            <MDBCardTitle className='font-weight-bold'><strong>{value.title}</strong> <MDBBadge color="primary" pill>1997</MDBBadge></MDBCardTitle>
                           <MDBBadge pill color="warning">Drama</MDBBadge> <MDBBadge pill color="warning">Romance</MDBBadge> <br></br>
 
                         </MDBCardBody>
                       </MDBCard>
                     </MDBCol>
-
-
-
                   </span>
                 </div>
               )
             }
           </div>
-
-
         </MDBRow>
 
       </MDBContainer>
