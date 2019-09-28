@@ -10,3 +10,10 @@ img {
   width:200px;
 }
 
+.s{
+  width: 1000px;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+

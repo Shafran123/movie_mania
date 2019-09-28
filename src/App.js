@@ -8,9 +8,13 @@ class App extends Component {
     return (
       <MDBContainer>
         <MDBRow>
+        <MDBCol>
+            <img className='s' src='https://i.imgur.com/WTGKUij.png'></img>
+          </MDBCol>
            <MDBCol>
             <img src='https://i.imgur.com/l8vyr9X.png'></img>
           </MDBCol>
+          <MDBCol></MDBCol>
         </MDBRow>
 
         <MDBRow>
