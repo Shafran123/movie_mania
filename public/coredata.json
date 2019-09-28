@@ -16,7 +16,16 @@
             "tag_1" : "Comedy",
             "tag_2" : "Crime",
             "cover_img" : "https://i.imgur.com/HmE6mNu.jpg"
+        },{
+            "id": 3,
+            "title": "The Shawshank Redemption",
+            "type": "Movie",
+            "year": "1994",
+            "tag_1" : "Drama",
+            "tag_2" : "",
+            "cover_img" : "https://i.imgur.com/V2R8jwO.jpg"
         }
+
     ]
     
 }

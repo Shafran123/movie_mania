@@ -23,6 +23,17 @@ img {
 }
 
 .fetch{
+  
   display: inline-block;
+}
+
+.subtitle{
+
+}
+
+.title{
+  padding-top: 10px;
+  font-size: 18px;
+
 }
 

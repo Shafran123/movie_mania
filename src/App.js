@@ -69,7 +69,7 @@ sortMovies(){
 
         </MDBRow>
         {/* Card */}
-        <MDBRow>
+        <MDBRow  className="d-flex justify-content-center" >
           <div>
             {
               this.state.movies.map((value) =>
@@ -79,9 +79,11 @@ sortMovies(){
                       <MDBCard>
                         <MDBCardImage className="img-fluid" src={value.cover_img} />
                         <MDBCardBody>
-                          <MDBIcon icon='film' /> Movie
-                            <MDBCardTitle className='font-weight-bold'><strong>{value.title}</strong> <MDBBadge color="primary" pill>{value.year}</MDBBadge></MDBCardTitle>
-                          <MDBBadge pill color="warning">{value.tag_1}</MDBBadge> <MDBBadge pill color="warning">{value.tag_2}</MDBBadge> <br></br>
+                      <MDBIcon className="subtitle" icon='film' /> Movie<br></br>
+                      <MDBCardTitle className='title'><strong>{value.title}</strong></MDBCardTitle>
+                          <MDBBadge color="primary" pill>{value.year}</MDBBadge> <MDBBadge pill color="warning">{value.tag_1}</MDBBadge> <MDBBadge pill color="warning">{value.tag_2}</MDBBadge>
+                           
+                         <br></br>
 
                         </MDBCardBody>
                       </MDBCard>
