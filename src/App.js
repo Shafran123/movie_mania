@@ -52,11 +52,11 @@ sortMovies(){
     return (
       <MDBContainer>
         <MDBRow>
-          <MDBCol>
-            <img className='s' src='https://i.imgur.com/WTGKUij.png' alt="filmstripe"></img>
+          <MDBCol >
+            <img className='s' src='https://i.imgur.com/fQylRRI.png' alt="filmstripe"></img>
           </MDBCol>
           <MDBCol>
-            <img src='https://i.imgur.com/l8vyr9X.png' alt="logo"></img>
+            <img src='https://i.imgur.com/mtIx6C7.png' alt="logo"></img>
           </MDBCol>
           <MDBCol></MDBCol>
         </MDBRow>
