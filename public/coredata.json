@@ -24,6 +24,62 @@
             "tag_1" : "Drama",
             "tag_2" : "",
             "cover_img" : "https://i.imgur.com/V2R8jwO.jpg"
+        },{
+            "id": 4,
+            "title": "Joker",
+            "type": "Movie",
+            "year": "2019",
+            "tag_1" : "Drama",
+            "tag_2" : "crime",
+            "cover_img" :"https://i.imgur.com/JYo9Q8p.jpg"   
+        },{
+            "id": 5,
+            "title": "Inception",
+            "type": "Movie",
+            "year": "2010",
+            "tag_1" : "Action",
+            "tag_2" : "Adventure",
+            "cover_img" :"https://i.imgur.com/vyuiCMK.jpg"   
+        },{
+            "id": 6,
+            "title": "Goodfellas",
+            "type": "Movie",
+            "year": "1990",
+            "tag_1" : "Biography",
+            "tag_2" : "Drama",
+            "cover_img" :"https://i.imgur.com/dim8nCl.jpg"   
+        },{
+            "id": 7,
+            "title": "Interstellar",
+            "type": "Movie",
+            "year": "2014",
+            "tag_1" : "Adventure",
+            "tag_2" : "Drama",
+            "cover_img" :"https://i.imgur.com/MXPhk9I.jpg"   
+        },{
+            "id": 8,
+            "title": "Whiplash",
+            "type": "Movie",
+            "year": "2014",
+            "tag_1" : "Music",
+            "tag_2" : "Drama",
+            "cover_img" :"https://i.imgur.com/v5cHrCU.jpg"   
+        },{
+            "id": 9,
+            "title": "The Intouchables",
+            "type": "Movie",
+            "year": "2011",
+            "tag_1" : "Biography",
+            "tag_2" : "Comedy",
+            "cover_img" :"https://i.imgur.com/3VQaxyz.jpg"   
+        },{
+            "id": 10,
+            "title": "Gladiator",
+            "type": "Movie",
+            "year": "2000",
+            "tag_1" : "Action",
+            "tag_2" : "Drama",
+            "cover_img" :"https://i.imgur.com/Dv423Yj.jpg"   
         }
 
     ]

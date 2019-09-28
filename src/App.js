@@ -68,14 +68,14 @@ sortMovies(){
 
         </MDBRow>
         {/* Card */}
-        <MDBRow  className="d-flex justify-content-center" >
-          <div>
+        <MDBRow className="cards">
+          <div >
             {
               this.state.movies.map((value) =>
                 <div className="fetch">
                   <span>
                     <MDBCol style={{ maxWidth: "20rem" }}>
-                      <MDBCard>
+                      <MDBCard >
                         <MDBCardImage className="img-fluid" src={value.cover_img} />
                         <MDBCardBody>
                       <MDBIcon className="subtitle" icon='film' /> Movie<br></br>
