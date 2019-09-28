@@ -6,14 +6,16 @@
           "type": "Movie",
           "year": "1997",
           "tag_1" : "Drama",
-          "tag_2" : "Romance"
+          "tag_2" : "Romance",
+          "cover_img" : "https://i.imgur.com/D0jm0sc.jpg"
         }, {
             "id": 2,
-            "title": "aitanic 2",
+            "title": "Hustlers",
             "type": "Movie",
-            "year": "1997",
-            "tag_1" : "Drama",
-            "tag_2" : "Romance"
+            "year": "2019",
+            "tag_1" : "Comedy",
+            "tag_2" : "Crime",
+            "cover_img" : "https://i.imgur.com/HmE6mNu.jpg"
         }
     ]
     

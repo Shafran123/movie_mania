@@ -62,14 +62,9 @@ sortMovies(){
           <MDBCol></MDBCol>
         </MDBRow>
 
-        <MDBRow>
-          <MDBCol className="d-flex justify-content-center">
-            <MDBFormInline className="md-form">
-              <input className="form-control" type="text" placeholder="Search" aria-label="Search" />
-              <MDBBtn gradient="blue" rounded size="sm" type="submit">
-                Search
-              </MDBBtn>
-            </MDBFormInline>
+        <MDBRow> 
+          <MDBCol>
+          <MDBInput label="Search" type="text" />
           </MDBCol>
 
         </MDBRow>
@@ -78,19 +73,15 @@ sortMovies(){
           <div>
             {
               this.state.movies.map((value) =>
-        
                 <div className="fetch">
-
                   <span>
                     <MDBCol style={{ maxWidth: "20rem" }}>
-
                       <MDBCard>
-
-                        <MDBCardImage className="img-fluid" src="https://i.imgur.com/D0jm0sc.jpg" />
+                        <MDBCardImage className="img-fluid" src={value.cover_img} />
                         <MDBCardBody>
                           <MDBIcon icon='film' /> Movie
-                            <MDBCardTitle className='font-weight-bold'><strong>{value.title}</strong> <MDBBadge color="primary" pill>1997</MDBBadge></MDBCardTitle>
-                          <MDBBadge pill color="warning">Drama</MDBBadge> <MDBBadge pill color="warning">Romance</MDBBadge> <br></br>
+                            <MDBCardTitle className='font-weight-bold'><strong>{value.title}</strong> <MDBBadge color="primary" pill>{value.year}</MDBBadge></MDBCardTitle>
+                          <MDBBadge pill color="warning">{value.tag_1}</MDBBadge> <MDBBadge pill color="warning">{value.tag_2}</MDBBadge> <br></br>
 
                         </MDBCardBody>
                       </MDBCard>
