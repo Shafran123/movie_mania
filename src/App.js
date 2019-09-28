@@ -127,7 +127,7 @@ class App extends Component {
           </MDBCol>
         </MDBRow>
         {/* Card */}
-        <MDBRow className="d-flex justify-content-center">
+        <MDBRow className="data">
           <div>
             {this.state.movies.map(value => (
               <div className="fetch">

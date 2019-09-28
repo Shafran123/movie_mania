@@ -20,6 +20,10 @@ img {
   width: 100%;
 }
 
+.data{
+  padding-left: 60px;
+}
+
 .fetch {
   display: inline-block;
 }
