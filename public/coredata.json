@@ -1,0 +1,20 @@
+{
+    "movies":[
+        {
+          "id": 1,
+          "title": "Titanic",
+          "type": "Movie",
+          "year": "1997",
+          "tag_1" : "Drama",
+          "tag_2" : "Romance"
+        }, {
+            "id": 2,
+            "title": "Titanic 2",
+            "type": "Movie",
+            "year": "1997",
+            "tag_1" : "Drama",
+            "tag_2" : "Romance"
+        }
+    ]
+    
+}

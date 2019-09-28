@@ -17,3 +17,12 @@ img {
   left: 70px;
 }
 
+.img-fluid{
+
+  width: 100%;
+}
+
+.fetch{
+  display: inline-block;
+}
+
