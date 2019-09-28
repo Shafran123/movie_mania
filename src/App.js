@@ -20,6 +20,7 @@ class App extends Component {
     this.state = {
       movies: [],
       suggestions: [],
+      updatedMovies: [],
       text: ""
     };
   }
@@ -63,16 +64,20 @@ class App extends Component {
   onTextChanged = e => {
     const value = e.target.value;
     let suggestions = [];
+    let updatedMovies = [];
     if (value.length > 0) {
       const regex = new RegExp(`^${value}`, "i");
+      //this is the main change
+      updatedMovies = this.state.movies.sort().filter(v => regex.test(v.title));
+
       let names = this.state.movies.sort().map(item => {
         return item.title;
       });
-      // console.log("this is the name ", names);
+
       suggestions = names.sort().filter(v => regex.test(v));
       console.log("these are the sugestions ", suggestions);
     }
-    this.setState(() => ({ suggestions, text: value }));
+    this.setState(() => ({ suggestions, text: value, updatedMovies }));
   };
   suggestionSelected = value => {
     this.setState(() => ({
@@ -91,6 +96,43 @@ class App extends Component {
           <li onClick={() => this.suggestionSelected(item)}>{item}</li>
         ))}
       </ul>
+    );
+  }
+
+  //made a common component for passing the respective the respective list
+  listMoviesComponent(moviesList) {
+    return (
+      <div>
+        {" "}
+        {moviesList.map(value => (
+          <div className="fetch">
+            <span>
+              <MDBCol style={{ maxWidth: "20rem" }}>
+                <MDBCard>
+                  <MDBCardImage className="img-fluid" src={value.cover_img} />
+                  <MDBCardBody>
+                    <MDBIcon className="subtitle" icon="film" /> Movie
+                    <br></br>
+                    <MDBCardTitle className="title">
+                      <strong>{value.title}</strong>
+                    </MDBCardTitle>
+                    <MDBBadge color="primary" pill>
+                      {value.year}
+                    </MDBBadge>{" "}
+                    <MDBBadge pill color="warning">
+                      {value.tag_1}
+                    </MDBBadge>{" "}
+                    <MDBBadge pill color="warning">
+                      {value.tag_2}
+                    </MDBBadge>
+                    <br></br>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+            </span>
+          </div>
+        ))}
+      </div>
     );
   }
 
@@ -128,39 +170,9 @@ class App extends Component {
         </MDBRow>
         {/* Card */}
         <MDBRow className="d-flex justify-content-center">
-          <div>
-            {this.state.movies.map(value => (
-              <div className="fetch">
-                <span>
-                  <MDBCol style={{ maxWidth: "20rem" }}>
-                    <MDBCard>
-                      <MDBCardImage
-                        className="img-fluid"
-                        src={value.cover_img}
-                      />
-                      <MDBCardBody>
-                        <MDBIcon className="subtitle" icon="film" /> Movie
-                        <br></br>
-                        <MDBCardTitle className="title">
-                          <strong>{value.title}</strong>
-                        </MDBCardTitle>
-                        <MDBBadge color="primary" pill>
-                          {value.year}
-                        </MDBBadge>{" "}
-                        <MDBBadge pill color="warning">
-                          {value.tag_1}
-                        </MDBBadge>{" "}
-                        <MDBBadge pill color="warning">
-                          {value.tag_2}
-                        </MDBBadge>
-                        <br></br>
-                      </MDBCardBody>
-                    </MDBCard>
-                  </MDBCol>
-                </span>
-              </div>
-            ))}
-          </div>
+          {this.state.updatedMovies.length > 0
+            ? this.listMoviesComponent(this.state.updatedMovies)
+            : this.listMoviesComponent(this.state.movies)}
         </MDBRow>
       </MDBContainer>
     );
