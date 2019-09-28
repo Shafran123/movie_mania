@@ -1,42 +1,56 @@
 .col,
-
 .col-5 {
-padding: 1rem;
+  padding: 1rem;
 
-text-align: center;
+  text-align: center;
 }
 
 img {
-  width:200px;
+  width: 200px;
 }
 
-.s{
+.s {
   align-content: center;
   width: 200%;
-  position :absolute;
+  position: absolute;
   top: 80px;
- 
 }
 
-.img-fluid{
-
+.img-fluid {
   width: 100%;
 }
 
-.fetch{
-  
+.fetch {
   display: inline-block;
 }
 
-
-.title{
+.title {
   padding-top: 10px;
   font-size: 18px;
-
 }
 
-.cards{
-  padding-left: 100px;
-  align-content: center;
+/* css changes for search bar from here  */
+
+.inputWrapper {
+  border: 1px solid grey;
+  box-shadow: 0 0 0 2px grey;
+}
+.inputWrapper input {
+  width: 100%;
+  border: none;
+  padding: 10px 5px;
+  box-sizing: border-box;
+}
+.inputWrapper ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
+.inputWrapper ul::before {
+  content: "";
+}
+.inputWrapper li {
+  padding: 10px 5px;
+}
