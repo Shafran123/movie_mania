@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { MDBBtn, MDBCard, MDBView, MDBCardImage, MDBCardTitle, MDBCardText, MDBCardBody, MDBFormInline, MDBInput, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBIcon, MDBBadge, MDBContainer, MDBRow, MDBCol } from "mdbreact";
-import Img from 'react-image'
+import { MDBCard, MDBCardImage, MDBCardTitle, MDBCardBody, MDBInput, MDBIcon, MDBBadge, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import './App.css';
-import axios from 'axios'
+
 
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       movies: [],
 
@@ -54,10 +53,10 @@ sortMovies(){
       <MDBContainer>
         <MDBRow>
           <MDBCol>
-            <img className='s' src='https://i.imgur.com/WTGKUij.png'></img>
+            <img className='s' src='https://i.imgur.com/WTGKUij.png' alt="filmstripe"></img>
           </MDBCol>
           <MDBCol>
-            <img src='https://i.imgur.com/l8vyr9X.png'></img>
+            <img src='https://i.imgur.com/l8vyr9X.png' alt="logo"></img>
           </MDBCol>
           <MDBCol></MDBCol>
         </MDBRow>
