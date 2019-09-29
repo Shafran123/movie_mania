@@ -173,6 +173,7 @@ class App extends Component {
           {this.state.updatedMovies.length > 0
             ? this.listMoviesComponent(this.state.updatedMovies)
             : this.listMoviesComponent(this.state.movies)}
+           </MDBRow>
       </MDBContainer>
     );
   }
