@@ -106,7 +106,7 @@ class App extends Component {
         {moviesList.map(value => (
           <div className="fetch">
             <span>
-              <MDBCol style={{ maxWidth: "17rem" }}>
+              <MDBCol style={{ maxWidth: "20rem" }}>
                 <MDBCard>
                   <MDBCardImage className="img-fluid" src={value.cover_img} />
                   <MDBCardBody>
