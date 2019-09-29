@@ -4,7 +4,6 @@ import {
   MDBCardImage,
   MDBCardTitle,
   MDBCardBody,
-  MDBInput,
   MDBIcon,
   MDBBadge,
   MDBContainer,
@@ -107,7 +106,7 @@ class App extends Component {
         {moviesList.map(value => (
           <div className="fetch">
             <span>
-              <MDBCol style={{ maxWidth: "20rem" }}>
+              <MDBCol style={{ maxWidth: "17rem" }}>
                 <MDBCard>
                   <MDBCardImage className="img-fluid" src={value.cover_img} />
                   <MDBCardBody>
