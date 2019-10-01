@@ -80,6 +80,14 @@
             "tag_1" : "Action",
             "tag_2" : "Drama",
             "cover_img" :"https://i.imgur.com/Dv423Yj.jpg"   
+        },{
+            "id": 10,
+            "title": "Fight Club",
+            "type": "Movie",
+            "year": "1999",
+            "tag_1" : "Drama",
+            "tag_2" : "Action",
+            "cover_img" :"https://i.imgur.com/0vUoWt5.jpg"   
         }
 
     ]
