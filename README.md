@@ -106,7 +106,7 @@ We are always open to [your feedback](https://github.com/facebookincubator/creat
 
 ## Folder Structure
 
-After creation, your project should look like this:
+After creation, your project should look like the following:
 
 ```
 my-app/
@@ -222,9 +222,9 @@ You would need to install an ESLint plugin for your editor first.
 ><img src="http://i.imgur.com/yVNNHJM.png" width="300">
 
 
->**For Visual Studio Code users**
+>**For The Visual Studio Code users**
 
->VS Code ESLint plugin automatically detects Create React App's configuration file. So you do not need to create `eslintrc.json` at the root directory, except when you want to add your own rules. In that case, you should include CRA's config by adding this line:
+>VS Code ESLint plugin will automatically detects Create React App's configuration file. So you do not need to create `eslintrc.json` at the root directory, except when you want to add your own rules. In that case, you should include CRA's config by adding this line:
 
 >```js
 {
