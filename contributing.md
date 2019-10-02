@@ -8,6 +8,18 @@ When contributing to this repository, please first discuss the change you wish t
 - Clone it to your local machine
 - Create a new branch
 - Add the new movie in [coredata.json](https://github.com/Shafran123/movie_mania/blob/master/public/coredata.json)
+- Add a new entry in the `movies` array
+```javascript
+{
+	"id": <<int>>, // Id of the movie, must be an integer, and must not be repeated
+	"title": <<string>>, // Name of the movie, must be a string
+	"type": <<string>>, // Type of the node, must be a string
+	"year": <<int>>, // Year the movie was released, must be an integer
+	"tag_1" : <<string>>, // Tag one for the movie, must be a string
+	"tag_2" : <<string>>, // Tag two for the movie, must be a string
+	"cover_img" : <<url>>  // URL to the movie poster, must be a string in the format of a URL
+}
+```
 - Commit your changes
 - Create a PR and ask for a review from the repository owners
 
