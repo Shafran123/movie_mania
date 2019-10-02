@@ -88,6 +88,22 @@
             "tag_1" : "Drama",
             "tag_2" : "Action",
             "cover_img" :"https://i.imgur.com/0vUoWt5.jpg"   
+        },{
+            "id": 12,
+            "title": "Avatar",
+            "type": "Movie",
+            "year": "2009",
+            "tag_1" : "Action",
+            "tag_2" : "Adventure",
+            "cover_img" :"https://i.imgur.com/EvNR4Qo.jpg"   
+        },{
+            "id": 13,
+            "title": "The Matrix",
+            "type": "Movie",
+            "year": "1999",
+            "tag_1" : "Action",
+            "tag_2" : "Adventure",
+            "cover_img" :"https://i.imgur.com/TRNfyg0.jpg"   
         }
 
     ]
