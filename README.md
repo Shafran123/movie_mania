@@ -1379,6 +1379,7 @@ For more information see [Add Firebase to your JavaScript Project](https://fireb
 
 **The step below is important!**<br>
 **If you skip it, your app will not deploy correctly.**
+**So make sure you dont skip the below step**
 
 Open your `package.json` and add a `homepage` field:
 
@@ -1392,7 +1393,7 @@ Create React App uses the `homepage` field to determine the root URL in the buil
 
 Now, whenever you run `npm run build`, you will see a cheat sheet with instructions on how to deploy to GitHub Pages.
 
-To publish it at [https://myusername.github.io/my-app](https://myusername.github.io/my-app), run:
+To publish it at github [https://myusername.github.io/my-app](https://myusername.github.io/my-app), run:
 
 ```sh
 npm install --save-dev gh-pages
