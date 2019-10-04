@@ -9,7 +9,8 @@
     "react-axios": "^2.0.3",
     "react-dom": "^16.10.0",
     "react-image": "^2.2.0",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {},
   "scripts": {

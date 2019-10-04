@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import uuid from "uuid/v4";
 import {
   MDBCard,
   MDBCardImage,
@@ -104,7 +105,7 @@ class App extends Component {
       <div>
         {" "}
         {moviesList.map(value => (
-          <div className="fetch">
+          <div className="fetch" key={uuid()}>
             <span>
               <MDBCol style={{ maxWidth: "20rem" }}>
                 <MDBCard>
@@ -172,7 +173,7 @@ class App extends Component {
           {this.state.updatedMovies.length > 0
             ? this.listMoviesComponent(this.state.updatedMovies)
             : this.listMoviesComponent(this.state.movies)}
-           </MDBRow>
+        </MDBRow>
       </MDBContainer>
     );
   }
